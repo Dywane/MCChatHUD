@@ -17,6 +17,7 @@
 		5B2DA05220205141008AF29B /* MCRecordHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA05120205141008AF29B /* MCRecordHUD.swift */; };
 		5B2DA05420205167008AF29B /* MCProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA05320205167008AF29B /* MCProgressView.swift */; };
 		5B2DA0562020517D008AF29B /* MCVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA0552020517D008AF29B /* MCVolumeView.swift */; };
+		5B2DA059202053D0008AF29B /* HUDMarco.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA058202053D0008AF29B /* HUDMarco.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		5B2DA05120205141008AF29B /* MCRecordHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCRecordHUD.swift; sourceTree = "<group>"; };
 		5B2DA05320205167008AF29B /* MCProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCProgressView.swift; sourceTree = "<group>"; };
 		5B2DA0552020517D008AF29B /* MCVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCVolumeView.swift; sourceTree = "<group>"; };
+		5B2DA058202053D0008AF29B /* HUDMarco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDMarco.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		5B2DA021202050C7008AF29B /* MCChatHUD */ = {
 			isa = PBXGroup;
 			children = (
+				5B2DA057202053B6008AF29B /* Marco */,
 				5B2DA05020205122008AF29B /* View */,
 				5B2DA022202050C7008AF29B /* AppDelegate.swift */,
 				5B2DA024202050C7008AF29B /* ViewController.swift */,
@@ -140,6 +143,14 @@
 				5B2DA0552020517D008AF29B /* MCVolumeView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		5B2DA057202053B6008AF29B /* Marco */ = {
+			isa = PBXGroup;
+			children = (
+				5B2DA058202053D0008AF29B /* HUDMarco.swift */,
+			);
+			path = Marco;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			files = (
 				5B2DA0562020517D008AF29B /* MCVolumeView.swift in Sources */,
 				5B2DA05220205141008AF29B /* MCRecordHUD.swift in Sources */,
+				5B2DA059202053D0008AF29B /* HUDMarco.swift in Sources */,
 				5B2DA025202050C7008AF29B /* ViewController.swift in Sources */,
 				5B2DA023202050C7008AF29B /* AppDelegate.swift in Sources */,
 				5B2DA05420205167008AF29B /* MCProgressView.swift in Sources */,
