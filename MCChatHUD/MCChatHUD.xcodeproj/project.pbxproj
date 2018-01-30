@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B2DA023202050C7008AF29B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA022202050C7008AF29B /* AppDelegate.swift */; };
+		5B2DA025202050C7008AF29B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA024202050C7008AF29B /* ViewController.swift */; };
+		5B2DA028202050C7008AF29B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2DA026202050C7008AF29B /* Main.storyboard */; };
+		5B2DA02A202050C7008AF29B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B2DA029202050C7008AF29B /* Assets.xcassets */; };
+		5B2DA02D202050C7008AF29B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2DA02B202050C7008AF29B /* LaunchScreen.storyboard */; };
+		5B2DA038202050C7008AF29B /* MCChatHUDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA037202050C7008AF29B /* MCChatHUDTests.swift */; };
+		5B2DA043202050C7008AF29B /* MCChatHUDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA042202050C7008AF29B /* MCChatHUDUITests.swift */; };
+		5B2DA05220205141008AF29B /* MCRecordHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA05120205141008AF29B /* MCRecordHUD.swift */; };
+		5B2DA05420205167008AF29B /* MCProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA05320205167008AF29B /* MCProgressView.swift */; };
+		5B2DA0562020517D008AF29B /* MCVolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA0552020517D008AF29B /* MCVolumeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B2DA034202050C7008AF29B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B2DA017202050C7008AF29B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B2DA01E202050C7008AF29B;
+			remoteInfo = MCChatHUD;
+		};
+		5B2DA03F202050C7008AF29B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B2DA017202050C7008AF29B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B2DA01E202050C7008AF29B;
+			remoteInfo = MCChatHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B2DA01F202050C7008AF29B /* MCChatHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCChatHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B2DA022202050C7008AF29B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B2DA024202050C7008AF29B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5B2DA027202050C7008AF29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B2DA029202050C7008AF29B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B2DA02C202050C7008AF29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B2DA02E202050C7008AF29B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B2DA033202050C7008AF29B /* MCChatHUDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCChatHUDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B2DA037202050C7008AF29B /* MCChatHUDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCChatHUDTests.swift; sourceTree = "<group>"; };
+		5B2DA039202050C7008AF29B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B2DA03E202050C7008AF29B /* MCChatHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MCChatHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B2DA042202050C7008AF29B /* MCChatHUDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCChatHUDUITests.swift; sourceTree = "<group>"; };
+		5B2DA044202050C7008AF29B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B2DA05120205141008AF29B /* MCRecordHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCRecordHUD.swift; sourceTree = "<group>"; };
+		5B2DA05320205167008AF29B /* MCProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCProgressView.swift; sourceTree = "<group>"; };
+		5B2DA0552020517D008AF29B /* MCVolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCVolumeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B2DA01C202050C7008AF29B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B2DA030202050C7008AF29B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B2DA03B202050C7008AF29B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B2DA016202050C7008AF29B = {
+			isa = PBXGroup;
+			children = (
+				5B2DA021202050C7008AF29B /* MCChatHUD */,
+				5B2DA036202050C7008AF29B /* MCChatHUDTests */,
+				5B2DA041202050C7008AF29B /* MCChatHUDUITests */,
+				5B2DA020202050C7008AF29B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B2DA020202050C7008AF29B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B2DA01F202050C7008AF29B /* MCChatHUD.app */,
+				5B2DA033202050C7008AF29B /* MCChatHUDTests.xctest */,
+				5B2DA03E202050C7008AF29B /* MCChatHUDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B2DA021202050C7008AF29B /* MCChatHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5B2DA05020205122008AF29B /* View */,
+				5B2DA022202050C7008AF29B /* AppDelegate.swift */,
+				5B2DA024202050C7008AF29B /* ViewController.swift */,
+				5B2DA026202050C7008AF29B /* Main.storyboard */,
+				5B2DA029202050C7008AF29B /* Assets.xcassets */,
+				5B2DA02B202050C7008AF29B /* LaunchScreen.storyboard */,
+				5B2DA02E202050C7008AF29B /* Info.plist */,
+			);
+			path = MCChatHUD;
+			sourceTree = "<group>";
+		};
+		5B2DA036202050C7008AF29B /* MCChatHUDTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B2DA037202050C7008AF29B /* MCChatHUDTests.swift */,
+				5B2DA039202050C7008AF29B /* Info.plist */,
+			);
+			path = MCChatHUDTests;
+			sourceTree = "<group>";
+		};
+		5B2DA041202050C7008AF29B /* MCChatHUDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5B2DA042202050C7008AF29B /* MCChatHUDUITests.swift */,
+				5B2DA044202050C7008AF29B /* Info.plist */,
+			);
+			path = MCChatHUDUITests;
+			sourceTree = "<group>";
+		};
+		5B2DA05020205122008AF29B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B2DA05120205141008AF29B /* MCRecordHUD.swift */,
+				5B2DA05320205167008AF29B /* MCProgressView.swift */,
+				5B2DA0552020517D008AF29B /* MCVolumeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B2DA01E202050C7008AF29B /* MCChatHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B2DA047202050C7008AF29B /* Build configuration list for PBXNativeTarget "MCChatHUD" */;
+			buildPhases = (
+				5B2DA01B202050C7008AF29B /* Sources */,
+				5B2DA01C202050C7008AF29B /* Frameworks */,
+				5B2DA01D202050C7008AF29B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MCChatHUD;
+			productName = MCChatHUD;
+			productReference = 5B2DA01F202050C7008AF29B /* MCChatHUD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5B2DA032202050C7008AF29B /* MCChatHUDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B2DA04A202050C7008AF29B /* Build configuration list for PBXNativeTarget "MCChatHUDTests" */;
+			buildPhases = (
+				5B2DA02F202050C7008AF29B /* Sources */,
+				5B2DA030202050C7008AF29B /* Frameworks */,
+				5B2DA031202050C7008AF29B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B2DA035202050C7008AF29B /* PBXTargetDependency */,
+			);
+			name = MCChatHUDTests;
+			productName = MCChatHUDTests;
+			productReference = 5B2DA033202050C7008AF29B /* MCChatHUDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5B2DA03D202050C7008AF29B /* MCChatHUDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B2DA04D202050C7008AF29B /* Build configuration list for PBXNativeTarget "MCChatHUDUITests" */;
+			buildPhases = (
+				5B2DA03A202050C7008AF29B /* Sources */,
+				5B2DA03B202050C7008AF29B /* Frameworks */,
+				5B2DA03C202050C7008AF29B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B2DA040202050C7008AF29B /* PBXTargetDependency */,
+			);
+			name = MCChatHUDUITests;
+			productName = MCChatHUDUITests;
+			productReference = 5B2DA03E202050C7008AF29B /* MCChatHUDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B2DA017202050C7008AF29B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Dywane;
+				TargetAttributes = {
+					5B2DA01E202050C7008AF29B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5B2DA032202050C7008AF29B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B2DA01E202050C7008AF29B;
+					};
+					5B2DA03D202050C7008AF29B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5B2DA01E202050C7008AF29B;
+					};
+				};
+			};
+			buildConfigurationList = 5B2DA01A202050C7008AF29B /* Build configuration list for PBXProject "MCChatHUD" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B2DA016202050C7008AF29B;
+			productRefGroup = 5B2DA020202050C7008AF29B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B2DA01E202050C7008AF29B /* MCChatHUD */,
+				5B2DA032202050C7008AF29B /* MCChatHUDTests */,
+				5B2DA03D202050C7008AF29B /* MCChatHUDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B2DA01D202050C7008AF29B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2DA02D202050C7008AF29B /* LaunchScreen.storyboard in Resources */,
+				5B2DA02A202050C7008AF29B /* Assets.xcassets in Resources */,
+				5B2DA028202050C7008AF29B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B2DA031202050C7008AF29B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B2DA03C202050C7008AF29B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B2DA01B202050C7008AF29B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2DA0562020517D008AF29B /* MCVolumeView.swift in Sources */,
+				5B2DA05220205141008AF29B /* MCRecordHUD.swift in Sources */,
+				5B2DA025202050C7008AF29B /* ViewController.swift in Sources */,
+				5B2DA023202050C7008AF29B /* AppDelegate.swift in Sources */,
+				5B2DA05420205167008AF29B /* MCProgressView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B2DA02F202050C7008AF29B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2DA038202050C7008AF29B /* MCChatHUDTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B2DA03A202050C7008AF29B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2DA043202050C7008AF29B /* MCChatHUDUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B2DA035202050C7008AF29B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B2DA01E202050C7008AF29B /* MCChatHUD */;
+			targetProxy = 5B2DA034202050C7008AF29B /* PBXContainerItemProxy */;
+		};
+		5B2DA040202050C7008AF29B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B2DA01E202050C7008AF29B /* MCChatHUD */;
+			targetProxy = 5B2DA03F202050C7008AF29B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B2DA026202050C7008AF29B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B2DA027202050C7008AF29B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B2DA02B202050C7008AF29B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B2DA02C202050C7008AF29B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B2DA045202050C7008AF29B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B2DA046202050C7008AF29B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B2DA048202050C7008AF29B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55F5T35K6E;
+				INFOPLIST_FILE = MCChatHUD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dywane.MCChatHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B2DA049202050C7008AF29B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55F5T35K6E;
+				INFOPLIST_FILE = MCChatHUD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dywane.MCChatHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B2DA04B202050C7008AF29B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55F5T35K6E;
+				INFOPLIST_FILE = MCChatHUDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dywane.MCChatHUDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCChatHUD.app/MCChatHUD";
+			};
+			name = Debug;
+		};
+		5B2DA04C202050C7008AF29B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55F5T35K6E;
+				INFOPLIST_FILE = MCChatHUDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dywane.MCChatHUDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MCChatHUD.app/MCChatHUD";
+			};
+			name = Release;
+		};
+		5B2DA04E202050C7008AF29B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55F5T35K6E;
+				INFOPLIST_FILE = MCChatHUDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dywane.MCChatHUDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MCChatHUD;
+			};
+			name = Debug;
+		};
+		5B2DA04F202050C7008AF29B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 55F5T35K6E;
+				INFOPLIST_FILE = MCChatHUDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dywane.MCChatHUDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MCChatHUD;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B2DA01A202050C7008AF29B /* Build configuration list for PBXProject "MCChatHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B2DA045202050C7008AF29B /* Debug */,
+				5B2DA046202050C7008AF29B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B2DA047202050C7008AF29B /* Build configuration list for PBXNativeTarget "MCChatHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B2DA048202050C7008AF29B /* Debug */,
+				5B2DA049202050C7008AF29B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B2DA04A202050C7008AF29B /* Build configuration list for PBXNativeTarget "MCChatHUDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B2DA04B202050C7008AF29B /* Debug */,
+				5B2DA04C202050C7008AF29B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B2DA04D202050C7008AF29B /* Build configuration list for PBXNativeTarget "MCChatHUDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B2DA04E202050C7008AF29B /* Debug */,
+				5B2DA04F202050C7008AF29B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B2DA017202050C7008AF29B /* Project object */;
+}
