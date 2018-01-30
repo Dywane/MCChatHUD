@@ -21,11 +21,8 @@ class MCProgressView: UIImageView {
     //MARK: - Init
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.frame.size.width = HUDWidth
-        self.frame.size.height = HUDHeight
         layer.cornerRadius = HUDCornerRadius
         clipsToBounds = true
-        
         setUpBlurView()
         configAnimate()
     }
@@ -53,7 +50,7 @@ extension MCProgressView {
 extension MCProgressView {
     
     private func configAnimate() {
-        let maskPath = UIBezierPath(roundedRect: CGRect.init(x: 0, y: 0, width: HUDWidth, height: HUDHeight), cornerRadius: HUDCornerRadius)
+        let maskPath = UIBezierPath(roundedRect: CGRect.init(x: 0, y: 0, width: frame.width, height: frame.height), cornerRadius: HUDCornerRadius)
         let maskLayer = CAShapeLayer()
         maskLayer.backgroundColor = UIColor.clear.cgColor
         maskLayer.path = maskPath.cgPath
@@ -64,8 +61,8 @@ extension MCProgressView {
          路径的中心为HUD的中心，宽度为HUD的高度，从左往右绘制
          */
         let progressPath = CGMutablePath()
-        progressPath.move(to: CGPoint(x: 0, y: HUDHeight / 2))
-        progressPath.addLine(to: CGPoint(x: HUDWidth, y: HUDHeight / 2))
+        progressPath.move(to: CGPoint(x: 0, y: frame.height / 2))
+        progressPath.addLine(to: CGPoint(x: frame.width, y: frame.height / 2))
         
         progressLayer = CAShapeLayer()
         progressLayer.frame = bounds
