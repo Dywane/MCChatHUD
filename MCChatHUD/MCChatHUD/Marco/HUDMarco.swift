@@ -17,3 +17,13 @@ internal let HUDWidth: CGFloat = 170
 internal let HUDHeight: CGFloat = 78
 /// 界面圆角
 internal let HUDCornerRadius: CGFloat = 38
+
+/// 屏幕高度
+internal let ScreenHeight = UIScreen.main.bounds.height
+/// 屏幕宽度
+internal let ScreenWidth = UIScreen.main.bounds.width
+
+/// 音量计高度
+internal let VolumeViewHeight = 40
+/// 音量计宽度
+internal let VolumeViewWidth = 60
