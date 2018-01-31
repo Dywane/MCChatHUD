@@ -29,8 +29,9 @@ class MCRecordHUD: UIView {
     }
     
     //MARK: - Init
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    
+    convenience init() {
+        self.init(frame: .zero)
         self.frame.size.width = HUDWidth
         self.frame.size.height = HUDHeight
         center = CGPoint(x: ScreenWidth/2, y: ScreenHeight/2 - 50)
@@ -40,6 +41,10 @@ class MCRecordHUD: UIView {
         setUpLabel()
         addSubview(titleLabel)
         setUpShadow()
+    }
+    
+    override private init(frame: CGRect) {
+        super.init(frame: frame)
     }
     
     required init?(coder aDecoder: NSCoder) {
