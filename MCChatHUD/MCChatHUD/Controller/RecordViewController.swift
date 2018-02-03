@@ -14,7 +14,7 @@ class RecordViewController: UIViewController {
     @IBOutlet weak private var recordButton: UIButton!
     
     /// 录音框
-    private var chatHUD = MCRecordHUD()
+    private var chatHUD = MCRecordHUD(type: .bar)
     
     /// 录音器
     private var recorder: AVAudioRecorder!
@@ -36,15 +36,13 @@ class RecordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configRecord()
         setupButtonEvent() 
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        recorder = nil
     }
-    
-
 }
 
 // MARK: - Record handlers
@@ -53,7 +51,7 @@ extension RecordViewController: AVAudioRecorderDelegate {
     /// 开始录音
     @objc private func beginRecordVoice() {
         if recorder == nil {
-            configRecord()
+            return
         }
         view.addSubview(chatHUD)
         view.isUserInteractionEnabled = false  //录音时候禁止点击其他地方

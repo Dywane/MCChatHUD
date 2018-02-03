@@ -14,7 +14,14 @@ class MCVolumeView: UIView {
     /// 声音表数组
     private var soundMeters: [Float]!
     
+    private var type: HUDType = .bar
+    
     //MARK: Init
+    convenience init(frame: CGRect, type: HUDType) {
+        self.init(frame: frame)
+        self.type = type
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = UIColor.clear
@@ -29,18 +36,28 @@ class MCVolumeView: UIView {
     override func draw(_ rect: CGRect) {
         if soundMeters != nil && soundMeters.count > 0 {
             let context = UIGraphicsGetCurrentContext()
-            context?.setLineWidth(3)
             context?.setLineCap(.round)
             context?.setLineJoin(.round)
             context?.setStrokeColor(UIColor.white.cgColor)
             
             let noVoice = -46.0     // 该值代表低于-46.0的声音都认为无声音
             let maxVolume = 55.0    // 该值代表最高声音为55.0
-            for (index,item) in soundMeters.enumerated() {
-                let barHeight = maxVolume - (Double(item) - noVoice)    //通过当前声音表计算应该显示的声音表高度
-                context?.move(to: CGPoint(x: index * 6 + 3, y: 40))     
-                context?.addLine(to: CGPoint(x: index * 6 + 3, y: Int(barHeight)))
-                
+            
+            switch type {
+            case .bar:
+                context?.setLineWidth(3)
+                for (index,item) in soundMeters.enumerated() {
+                    let barHeight = maxVolume - (Double(item) - noVoice)    //通过当前声音表计算应该显示的声音表高度
+                    context?.move(to: CGPoint(x: index * 6 + 3, y: 40))
+                    context?.addLine(to: CGPoint(x: index * 6 + 3, y: Int(barHeight)))
+                }
+            case .stroke:
+                context?.setLineWidth(1.5)
+                for (index, item) in soundMeters.enumerated() {
+                    let position = maxVolume - (Double(item) - noVoice)     //计算对应线段高度
+                    context?.addLine(to: CGPoint(x: Double(index * 6 + 3), y: position))
+                    context?.move(to: CGPoint(x: Double(index * 6 + 3), y: position))
+                }
             }
             context?.strokePath()
         }

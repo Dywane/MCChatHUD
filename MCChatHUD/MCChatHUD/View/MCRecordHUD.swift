@@ -8,6 +8,15 @@
 
 import UIKit
 
+/// HUD类型
+///
+/// - bar: 条状
+/// - stroke: 线状
+enum HUDType {
+    case bar
+    case stroke
+}
+
 class MCRecordHUD: UIView {
 
     //MARK: - Public Properties
@@ -16,7 +25,7 @@ class MCRecordHUD: UIView {
     
     //MARK: - Private Properties
     private let progress = MCProgressView(frame: CGRect(x: 0, y: 0, width: HUDWidth, height: HUDHeight))
-    private let volume = MCVolumeView(frame: CGRect(x: 56, y: 0, width: VolumeViewWidth, height: VolumeViewHeight))
+    private var volume: MCVolumeView!
     
     //MARK: Methods
     public func startCounting() {
@@ -30,14 +39,17 @@ class MCRecordHUD: UIView {
     
     //MARK: - Init
     
-    convenience init() {
+    convenience init(type: HUDType) {
         self.init(frame: .zero)
         self.frame.size.width = HUDWidth
         self.frame.size.height = HUDHeight
         center = CGPoint(x: ScreenWidth/2, y: ScreenHeight/2 - 50)
         backgroundColor = UIColor.clear
         addSubview(progress)
+        
+        volume = MCVolumeView(frame: CGRect(x: 56, y: 0, width: VolumeViewWidth, height: VolumeViewHeight), type: type)
         addSubview(volume)
+        
         setUpLabel()
         addSubview(titleLabel)
         setUpShadow()
