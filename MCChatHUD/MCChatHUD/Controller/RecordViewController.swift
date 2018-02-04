@@ -10,11 +10,14 @@ import UIKit
 import AVFoundation
 
 class RecordViewController: UIViewController {
+
+    /// HUD类型
+    public var HUDType: HUDType = .bar
     
     @IBOutlet weak private var recordButton: UIButton!
     
     /// 录音框
-    private var chatHUD = MCRecordHUD(type: .bar)
+    private var chatHUD: MCRecordHUD!
     
     /// 录音器
     private var recorder: AVAudioRecorder!
@@ -36,6 +39,7 @@ class RecordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        chatHUD = MCRecordHUD(type: HUDType)
         configRecord()
         setupButtonEvent() 
     }

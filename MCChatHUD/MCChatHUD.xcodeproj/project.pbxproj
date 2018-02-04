@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1A80CC202708FD0065F21B /* ChooseTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1A80CB202708FD0065F21B /* ChooseTypeViewController.swift */; };
 		5B2DA023202050C7008AF29B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA022202050C7008AF29B /* AppDelegate.swift */; };
-		5B2DA025202050C7008AF29B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2DA024202050C7008AF29B /* ViewController.swift */; };
 		5B2DA028202050C7008AF29B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2DA026202050C7008AF29B /* Main.storyboard */; };
 		5B2DA02A202050C7008AF29B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B2DA029202050C7008AF29B /* Assets.xcassets */; };
 		5B2DA02D202050C7008AF29B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2DA02B202050C7008AF29B /* LaunchScreen.storyboard */; };
@@ -39,9 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B1A80CB202708FD0065F21B /* ChooseTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTypeViewController.swift; sourceTree = "<group>"; };
 		5B2DA01F202050C7008AF29B /* MCChatHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCChatHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2DA022202050C7008AF29B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B2DA024202050C7008AF29B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5B2DA027202050C7008AF29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5B2DA029202050C7008AF29B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B2DA02C202050C7008AF29B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -111,7 +111,6 @@
 				5B2DA05020205122008AF29B /* View */,
 				5B2DA057202053B6008AF29B /* Marco */,
 				5B2DA022202050C7008AF29B /* AppDelegate.swift */,
-				5B2DA024202050C7008AF29B /* ViewController.swift */,
 				5B2DA026202050C7008AF29B /* Main.storyboard */,
 				5B2DA029202050C7008AF29B /* Assets.xcassets */,
 				5B2DA02B202050C7008AF29B /* LaunchScreen.storyboard */,
@@ -160,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				5B6A6CEA2021E07E00F16718 /* RecordViewController.swift */,
+				5B1A80CB202708FD0065F21B /* ChooseTypeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -299,10 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B2DA0562020517D008AF29B /* MCVolumeView.swift in Sources */,
+				5B1A80CC202708FD0065F21B /* ChooseTypeViewController.swift in Sources */,
 				5B2DA05220205141008AF29B /* MCRecordHUD.swift in Sources */,
 				5B2DA059202053D0008AF29B /* HUDMarco.swift in Sources */,
 				5B6A6CEB2021E07E00F16718 /* RecordViewController.swift in Sources */,
-				5B2DA025202050C7008AF29B /* ViewController.swift in Sources */,
 				5B2DA023202050C7008AF29B /* AppDelegate.swift in Sources */,
 				5B2DA05420205167008AF29B /* MCProgressView.swift in Sources */,
 			);

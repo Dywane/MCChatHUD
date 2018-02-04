@@ -51,7 +51,7 @@ class MCVolumeView: UIView {
                     context?.move(to: CGPoint(x: index * 6 + 3, y: 40))
                     context?.addLine(to: CGPoint(x: index * 6 + 3, y: Int(barHeight)))
                 }
-            case .stroke:
+            case .line:
                 context?.setLineWidth(1.5)
                 for (index, item) in soundMeters.enumerated() {
                     let position = maxVolume - (Double(item) - noVoice)     //计算对应线段高度

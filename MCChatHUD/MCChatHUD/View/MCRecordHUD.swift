@@ -12,9 +12,9 @@ import UIKit
 ///
 /// - bar: 条状
 /// - stroke: 线状
-enum HUDType {
-    case bar
-    case stroke
+enum HUDType: Int {
+    case bar = 0
+    case line
 }
 
 class MCRecordHUD: UIView {
