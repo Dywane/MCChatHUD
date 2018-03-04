@@ -2,6 +2,8 @@
 
 MatchaSKD中录音波形图实现Demo，并增加新的样式。
 
+[文章地址](https://dywane.github.io/在iOS中绘制录音音频波形图/)
+
 # 效果图
 ![条状波形图](http://upload-images.jianshu.io/upload_images/4853563-cc1e5ca0e113e99e.gif?imageMogr2/auto-orient/strip)
 ![线装波形图](http://upload-images.jianshu.io/upload_images/4853563-3cac5c7d7410f808.gif?imageMogr2/auto-orient/strip)
