@@ -95,26 +95,22 @@ extension RecordViewController: AVAudioRecorderDelegate {
         recorder.updateMeters()
         recordTime += updateFequency
         addSoundMeter(item: recorder.averagePower(forChannel: 0))
+        if recordTime >= 60.0 {
+            endRecordVoice()
+        }
     }
     
     private func addSoundMeter(item: Float) {
         if soundMeters.count < soundMeterCount {
             soundMeters.append(item)
         } else {
-            // 左移数组数据两次，方便操作
             for (index, _) in soundMeters.enumerated() {
-                if index < soundMeterCount-1 {
+                if index < soundMeterCount - 1 {
                     soundMeters[index] = soundMeters[index + 1]
                 }
             }
-            for (index, _) in soundMeters.enumerated() {
-                if index < soundMeterCount-1 {
-                    soundMeters[index] = soundMeters[index + 1]
-                }
-            }
-            // 最后两位插入新数据
+            // 插入新数据
             soundMeters[soundMeterCount - 1] = item
-            soundMeters[soundMeterCount - 2] = item
             NotificationCenter.default.post(name: NSNotification.Name.init("updateMeters"), object: soundMeters)
         }
     }
@@ -155,7 +151,7 @@ extension RecordViewController {
     
     private func configAVAudioSession() {
         let session = AVAudioSession.sharedInstance()
-        do { try session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker) }
+        do { try session.setCategory(AVAudioSessionCategoryRecord, with: .defaultToSpeaker) }
         catch { print("session config failed") }
     }
     

@@ -76,7 +76,7 @@ extension MCProgressView {
         blurView.contentView.layer.addSublayer(progressLayer)
         
         animation = CABasicAnimation(keyPath: "strokeEnd")
-        animation.duration = 60
+        animation.duration = 60 //最大录音时长
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)    //匀速前进
         animation.fillMode = kCAFillModeForwards
         animation.fromValue = 0.0
