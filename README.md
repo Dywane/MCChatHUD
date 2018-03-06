@@ -1,6 +1,6 @@
 # MCChatHUD
 
-MatchaSKD中录音波形图实现Demo，并增加新的样式。
+[MatchaSKD](https://itunes.apple.com/cn/app/matcha-schedule/id1310248785?mt=8)中录音波形图实现Demo，并增加新的样式。
 
 [文章地址](https://dywane.github.io/在iOS中绘制录音音频波形图/)
 
@@ -46,7 +46,7 @@ MatchaSKD中录音波形图实现Demo，并增加新的样式。
 - **directoryURL**是用于配置文件保存地址。
 
 ```swift
-	private func configAVAudioSession() {
+    private func configAVAudioSession() {
         let session = AVAudioSession.sharedInstance()
         do { try session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker) }
         catch { print("session config failed") }
@@ -88,7 +88,7 @@ MatchaSKD中录音波形图实现Demo，并增加新的样式。
 - **addSoundMeter**用于完成添加数据的工作。
 
 ```swift
-	private func updateMeters() {
+    private func updateMeters() {
         recorder.updateMeters()
         recordTime += updateFequency
         addSoundMeter(item: recorder.averagePower(forChannel: 0))
@@ -134,7 +134,7 @@ MatchaSKD中录音波形图实现Demo，并增加新的样式。
 - 波形图的绘制使用CGContext进行绘制，当然也可以使用UIBezierPath进行绘制。
 
 ```swift
-	override func draw(_ rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         if soundMeters != nil && soundMeters.count > 0 {
             let context = UIGraphicsGetCurrentContext()
             context?.setLineCap(.round)
@@ -157,13 +157,13 @@ MatchaSKD中录音波形图实现Demo，并增加新的样式。
 - 另外需要注意的是`CGContext`中坐标点时反转的，所以在进行计算时需要将坐标轴进行反转来计算。
 
 ```swift
-	case .bar:          
-   		context?.setLineWidth(3)
-       for (index,item) in soundMeters.enumerated() {
-       	let barHeight = maxVolume - (Double(item) - noVoice)    //通过当前声音表计算应该显示的声音表高度
-        	context?.move(to: CGPoint(x: index * 6 + 3, y: 40))
-        	context?.addLine(to: CGPoint(x: index * 6 + 3, y: Int(barHeight)))
-       }
+    case .bar:
+        context?.setLineWidth(3)
+        for (index,item) in soundMeters.enumerated() {
+            let barHeight = maxVolume - (Double(item) - noVoice)    //通过当前声音表计算应该显示的声音表高度
+            context?.move(to: CGPoint(x: index * 6 + 3, y: 40))
+            context?.addLine(to: CGPoint(x: index * 6 + 3, y: Int(barHeight)))
+        }
 ```
 
 ### 线状波形图的绘制
@@ -178,7 +178,6 @@ MatchaSKD中录音波形图实现Demo，并增加新的样式。
             context?.addLine(to: CGPoint(x: Double(index * 6 + 3), y: position))
             context?.move(to: CGPoint(x: Double(index * 6 + 3), y: position))
         }
-    }
 ```
 
 ### 进一步完善我们的波形图
@@ -190,8 +189,8 @@ MatchaSKD中录音波形图实现Demo，并增加新的样式。
 - **animation**是进度路径的绘制动画。
 
 ```swift
-	private func configAnimate() {
-        let maskPath = UIBezierPath(roundedRect: CGRect.init(x: 0, y: 0, width: frame.width, height: frame.height), cornerRadius: HUDCornerRadius)
+    private func configAnimate() {
+        let maskPath = UIBezierPath(roundedRect: CGRect.init(x: 0, y: 0, width:             frame.width, height: frame.height), cornerRadius: HUDCornerRadius)
         let maskLayer = CAShapeLayer()
         maskLayer.backgroundColor = UIColor.clear.cgColor
         maskLayer.path = maskPath.cgPath
